@@ -39,10 +39,9 @@ export const theme = createTheme(
         dark: '#005E5A',
       },
       text: {
-        primary: '#0d1017',
+        primary: '#010001',
       },
       background: {
-        default: '#f0f5fc',
         paper: '#FFFFFF',
       },
     },
@@ -50,37 +49,37 @@ export const theme = createTheme(
       fontFamily: "'Quicksand', sans-serif",
       h1: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
       h2: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
       h3: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
       h4: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
       h5: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
       h6: {
         fontFamily: "'Major Mono Display', monospace",
-        fontWeight: 600,
+        fontWeight: 800,
         textShadow:
           '-1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);',
       },
@@ -101,7 +100,7 @@ export const theme = createTheme(
       body1: {
         fontSize: 18,
         lineHeight: 1.7,
-        fontWeight: 400,
+        fontWeight: 500,
       },
       caption: {
         fontFamily: "'Major Mono Display', monospace",
@@ -111,7 +110,7 @@ export const theme = createTheme(
       },
       button: {
         letterSpacing: 2.8,
-        fontWeight: 400,
+        fontWeight: 500,
       },
     },
     components: {},

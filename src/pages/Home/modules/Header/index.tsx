@@ -16,14 +16,14 @@ export const Header: React.FC = () => {
       <Grid container sx={{mt: 0.4}}>
         <Grid item xs={10}>
           <Grid container>
-            <Grid item xs={9.5} sx={{borderBottom: '1px solid black'}}>
+            <Grid item xs={9.5} sx={{borderBottom: '1px solid #010001'}}>
               <Grid container>
                 <Grid
                   item
                   xs={12}
                   sx={{
-                    borderBottom: '1px solid black',
-                    borderRight: '1px solid black',
+                    borderBottom: '1px solid #010001',
+                    borderRight: '1px solid #010001',
                     p: 3,
                   }}>
                   <Typography variant="h1">MInIMAlISt</Typography>
@@ -32,19 +32,22 @@ export const Header: React.FC = () => {
                   item
                   xs={12}
                   sx={{
-                    borderBottom: '1px solid black',
-                    borderRight: '1px solid black',
+                    borderBottom: '1px solid #010001',
+                    borderRight: '1px solid #010001',
                     p: 3,
                   }}>
                   <Typography variant="h1">& CreAtive</Typography>
                 </Grid>
-                <Grid item xs={12} sx={{borderRight: '1px solid black', p: 3}}>
+                <Grid
+                  item
+                  xs={12}
+                  sx={{borderRight: '1px solid #010001', p: 3}}>
                   <Typography variant="h1">WebSiteS</Typography>
                 </Grid>
               </Grid>
             </Grid>
 
-            <Grid item xs={2.5} sx={{borderBottom: '1px solid black'}}>
+            <Grid item xs={2.5} sx={{borderBottom: '1px solid #010001'}}>
               <Stack p={5}>
                 <Stack sx={{transform: 'rotate(90deg)'}}>
                   <Typography variant="h5">
@@ -92,7 +95,7 @@ export const Header: React.FC = () => {
           </Grid>
         </Grid>
 
-        <Grid item xs={2} sx={{borderLeft: '1px solid black'}}>
+        <Grid item xs={2} sx={{borderLeft: '1px solid #010001'}}>
           <Stack sx={{transform: 'rotate(90deg)'}} ml={2} mr={2.5}></Stack>
         </Grid>
       </Grid>

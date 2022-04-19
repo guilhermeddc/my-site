@@ -24,11 +24,11 @@ export const Appbar: React.FC = () => {
             pr={6}
             pl={3}
             alignItems="center">
-            <Link href="#" sx={{textDecoration: 'unset'}}>
+            <Link href="#top" sx={{textDecoration: 'unset'}}>
               <Typography
                 variant="body2"
                 fontWeight={700}
-                color="black"
+                color="#010001"
                 textTransform="uppercase">
                 GUILHERME_RODRIGUES
               </Typography>
@@ -38,38 +38,38 @@ export const Appbar: React.FC = () => {
               <Link href="#about" sx={{textDecoration: 'unset'}}>
                 <Typography
                   variant="body2"
-                  color="black"
+                  color="#010001"
                   fontWeight={500}
                   textTransform="uppercase">
                   about me
                 </Typography>
               </Link>
 
-              <Link href="#" sx={{textDecoration: 'unset'}}>
+              <Link href="#portfolio" sx={{textDecoration: 'unset'}}>
                 <Typography
                   variant="body2"
                   fontWeight={500}
-                  color="black"
+                  color="#010001"
                   textTransform="uppercase">
                   portfolio
                 </Typography>
               </Link>
 
-              <Link href="#" sx={{textDecoration: 'unset'}}>
+              <Link href="#process" sx={{textDecoration: 'unset'}}>
                 <Typography
                   variant="body2"
                   fontWeight={500}
-                  color="black"
+                  color="#010001"
                   textTransform="uppercase">
                   process
                 </Typography>
               </Link>
 
-              <Link href="#" sx={{textDecoration: 'unset'}}>
+              <Link href="#prices" sx={{textDecoration: 'unset'}}>
                 <Typography
                   variant="body2"
                   fontWeight={500}
-                  color="black"
+                  color="#010001"
                   textTransform="uppercase">
                   prices
                 </Typography>
@@ -78,14 +78,14 @@ export const Appbar: React.FC = () => {
           </Stack>
 
           <Stack sx={{borderLeft: '1px solid #010001', p: 4}}>
-            <Link href="#" sx={{textDecoration: 'unset', pl: 3}}>
+            <Link href="#contacts" sx={{textDecoration: 'unset', pl: 3}}>
               <Typography
                 variant="body2"
-                color="black"
+                color="#010001"
                 fontWeight={500}
                 textTransform="uppercase"
                 sx={{px: 0.9}}>
-                Contacts
+                contacts
               </Typography>
             </Link>
           </Stack>

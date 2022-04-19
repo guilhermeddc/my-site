@@ -2,10 +2,12 @@ import React from 'react';
 
 import {Container, Grid, Stack, Typography} from '@mui/material';
 import {profile} from 'shared/assets';
+import {SessionTitle} from 'shared/components';
 
 export const About: React.FC = () => {
   return (
-    <Stack flex={1} sx={{borderTop: '1px solid black'}} id="about">
+    <Stack flex={1} id="about">
+      <SessionTitle title="About Me" />
       <Container
         sx={{
           pl: '0 !important',
@@ -52,7 +54,7 @@ export const About: React.FC = () => {
               width="100%"
               height="100%"
               sx={{
-                borderLeft: '1px solid black',
+                borderLeft: '1px solid #010001',
                 backgroundImage: `url(${profile})`,
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
