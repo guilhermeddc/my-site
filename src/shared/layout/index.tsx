@@ -3,7 +3,7 @@ import React from 'react';
 import {Stack} from '@mui/material';
 import {background} from 'shared/assets';
 
-import {Appbar} from './components';
+import {Appbar, Footer} from './components';
 
 interface IProps {
   children?: React.ReactNode;
@@ -24,8 +24,8 @@ export const BaseLayout: React.FC<IProps> = ({children}) => {
         m: 0,
       }}>
       <Appbar />
-
       {children}
+      <Footer />
     </Stack>
   );
 };

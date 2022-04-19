@@ -20,7 +20,7 @@ export const SessionTitle: React.FC<IProps> = ({title}) => {
           borderRight: '1px solid #010001',
         }}>
         <Stack flex={1} p={4}>
-          <Typography variant="h1">{title}</Typography>
+          <Typography variant="h2">{title}</Typography>
         </Stack>
       </Container>
     </Stack>

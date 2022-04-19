@@ -1,13 +1,13 @@
 import React from 'react';
 
 import {Stack, Container, Grid} from '@mui/material';
-import {PortfolioItem, SessionTitle} from 'shared/components';
-import {PORTFOLIO_DATA} from 'shared/constants';
+import {PriceItem, SessionTitle} from 'shared/components';
+import {PRICES_DATA} from 'shared/constants';
 
-export const Portfolio: React.FC = () => {
+export const Prices: React.FC = () => {
   return (
-    <Stack flex={1} id="portfolio">
-      <SessionTitle title="Portfolio" />
+    <Stack flex={1} id="prices">
+      <SessionTitle title="Prices" />
       <Container
         sx={{
           pl: '0 !important',
@@ -16,17 +16,17 @@ export const Portfolio: React.FC = () => {
           borderRight: '1px solid #010001',
         }}>
         <Grid container>
-          {PORTFOLIO_DATA.map((item, index) => (
-            <PortfolioItem
+          {PRICES_DATA.map((item, index) => (
+            <PriceItem
               key={item.id}
               index={index}
               title={item.title}
               description={item.description}
-              url={item.url}
-              date={item.date}
+              price={item.price}
+              time={item.time}
               borderBottom={
-                index === PORTFOLIO_DATA.length - 1 ||
-                index === PORTFOLIO_DATA.length - 2
+                index === PRICES_DATA.length - 1 ||
+                index === PRICES_DATA.length - 2
               }
             />
           ))}

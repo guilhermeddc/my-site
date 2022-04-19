@@ -1,13 +1,11 @@
 import {createTheme} from '@mui/material';
 import {ptBR} from '@mui/material/locale';
 
-export const cores = ['#6537A6', '#AA6EFF', '#8C4CE6', '#999514', '#E6E14C'];
-
 export const theme = createTheme(
   {
     palette: {
       primary: {
-        main: '#6537a6',
+        main: '#010001',
         light: '#9764d8',
         dark: '#330876',
         contrastText: '#FFFFFF',
@@ -85,14 +83,12 @@ export const theme = createTheme(
       },
       subtitle1: {
         letterSpacing: 2.8,
-        textTransform: 'uppercase',
         fontWeight: 300,
         textShadow:
           '-0.4px -0.4px 0.4px rgba(255,255,255,.1), 0.4px 0.4px 0.4px rgba(0,0,0,.5);',
       },
       subtitle2: {
         letterSpacing: 2.8,
-        textTransform: 'uppercase',
         fontWeight: 300,
         textShadow:
           '-0.4px -0.4px 0.4px rgba(255,255,255,.1), 0.4px 0.4px 0.4px rgba(0,0,0,.5);',

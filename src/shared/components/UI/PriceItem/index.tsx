@@ -1,22 +1,21 @@
 import React from 'react';
 
-import {CallMadeRounded} from '@mui/icons-material';
 import {Grid, Stack, Typography} from '@mui/material';
 
 interface IProps {
   title: string;
   description: string;
-  url: string;
-  date: string;
+  time: string;
+  price: string;
   index: number;
   borderBottom?: boolean;
 }
 
-export const PortfolioItem: React.FC<IProps> = ({
+export const PriceItem: React.FC<IProps> = ({
   title,
   description,
-  url,
-  date,
+  time,
+  price,
   index,
   borderBottom,
 }) => {
@@ -43,21 +42,12 @@ export const PortfolioItem: React.FC<IProps> = ({
           direction="row"
           alignItems="center"
           justifyContent="space-between">
-          <Typography>{date}</Typography>
+          <Typography>{time}</Typography>
 
           <Stack spacing={1} direction="row" alignItems="center">
-            <Typography
-              component="a"
-              textTransform="uppercase"
-              target="_blank"
-              fontWeight={600}
-              sx={{textDecoration: 'none'}}
-              color="#010001"
-              variant="body1"
-              href={url}>
-              Learn more
+            <Typography fontWeight={600} color="#010001" variant="body1">
+              {price}
             </Typography>
-            <CallMadeRounded />
           </Stack>
         </Stack>
       </Stack>

@@ -78,7 +78,7 @@ export const Appbar: React.FC = () => {
           </Stack>
 
           <Stack sx={{borderLeft: '1px solid #010001', p: 4}}>
-            <Link href="#contacts" sx={{textDecoration: 'unset', pl: 3}}>
+            <Link href="#contact" sx={{textDecoration: 'unset', pl: 3}}>
               <Typography
                 variant="body2"
                 color="#010001"
