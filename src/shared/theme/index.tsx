@@ -98,6 +98,11 @@ export const theme = createTheme(
         lineHeight: 1.7,
         fontWeight: 500,
       },
+      body2: {
+        fontSize: 14,
+        lineHeight: 1.7,
+        fontWeight: 500,
+      },
       caption: {
         fontFamily: "'Major Mono Display', monospace",
         lineHeight: 1.2,

@@ -10,8 +10,8 @@ export const Process: React.FC = () => {
       <SessionTitle title="Work Process " />
       <Container
         sx={{
-          pl: '0 !important',
-          pr: '0 !important',
+          pl: {md: '0 !important', xs: 2, sm: 3},
+          pr: {md: '0 !important', xs: 2, sm: 3},
           borderLeft: '1px solid #010001',
           borderRight: '1px solid #010001',
         }}>

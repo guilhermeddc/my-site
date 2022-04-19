@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Grid, Stack, Typography} from '@mui/material';
+import {useMediaQuery} from 'shared/hook';
 
 interface IProps {
   title: string;
@@ -19,20 +20,32 @@ export const PriceItem: React.FC<IProps> = ({
   index,
   borderBottom,
 }) => {
+  const {isMobile} = useMediaQuery();
+
   return (
     <Grid
       item
-      xs={6}
+      xs={12}
+      md={6}
       sx={{
-        borderRight: index % 2 === 0 ? '1px solid #010001' : 'none',
         borderBottom: !borderBottom ? '1px solid #010001' : 'none',
+        borderLeft: {
+          sm: '1px solid #010001',
+          xs: '1px solid #010001',
+          md: 'none',
+        },
+        borderRight: {
+          sm: '1px solid #010001',
+          xs: '1px solid #010001',
+          md: index % 2 === 0 ? '1px solid #010001' : 'none',
+        },
         p: 5,
       }}>
       <Stack spacing={3} justifyContent="space-between" height={320}>
         <Stack spacing={3}>
           <Typography variant="h6">{title}</Typography>
 
-          <Typography variant="body1" fontWeight={500}>
+          <Typography variant={isMobile ? 'body2' : 'body1'} fontWeight={500}>
             {description}
           </Typography>
         </Stack>
@@ -45,7 +58,10 @@ export const PriceItem: React.FC<IProps> = ({
           <Typography>{time}</Typography>
 
           <Stack spacing={1} direction="row" alignItems="center">
-            <Typography fontWeight={600} color="#010001" variant="body1">
+            <Typography
+              fontWeight={600}
+              color="#010001"
+              variant={isMobile ? 'body2' : 'body1'}>
               {price}
             </Typography>
           </Stack>

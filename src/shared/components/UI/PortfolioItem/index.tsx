@@ -23,10 +23,20 @@ export const PortfolioItem: React.FC<IProps> = ({
   return (
     <Grid
       item
-      xs={6}
+      xs={12}
+      md={6}
       sx={{
-        borderRight: index % 2 === 0 ? '1px solid #010001' : 'none',
         borderBottom: !borderBottom ? '1px solid #010001' : 'none',
+        borderLeft: {
+          sm: '1px solid #010001',
+          xs: '1px solid #010001',
+          md: 'none',
+        },
+        borderRight: {
+          sm: '1px solid #010001',
+          xs: '1px solid #010001',
+          md: index % 2 === 0 ? '1px solid #010001' : 'none',
+        },
         p: 5,
       }}>
       <Stack spacing={3} justifyContent="space-between" height={320}>

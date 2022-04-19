@@ -4,3 +4,4 @@ export * from './UI/PortfolioItem';
 export * from './UI/ProcessItem';
 export * from './UI/PriceItem';
 export * from './UI/ExternalLink';
+export * from './UI/ButtonFixed';
