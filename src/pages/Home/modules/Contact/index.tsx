@@ -92,6 +92,9 @@ export const Contact: React.FC = () => {
               },
             }}>
             <Stack
+              component="form"
+              name="contact"
+              method="post"
               p={5}
               height={600}
               spacing={4}
@@ -123,7 +126,9 @@ export const Contact: React.FC = () => {
                 direction={{sm: 'row', xs: 'column-reverse'}}
                 spacing={2}
                 justifyContent="space-between">
-                <Button endIcon={<CallMadeRounded fontSize="large" />}>
+                <Button
+                  type="submit"
+                  endIcon={<CallMadeRounded fontSize="large" />}>
                   <Typography
                     variant={isMobile ? 'body2' : 'body1'}
                     fontWeight={600}
