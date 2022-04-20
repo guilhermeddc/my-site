@@ -6,7 +6,7 @@ import {PROCESS_DATA} from 'shared/constants';
 
 export const Process: React.FC = () => {
   return (
-    <Stack flex={1} id="process">
+    <Stack flex={1} id="process" pt={11} mt={-11}>
       <SessionTitle title="Work Process" />
       <Container
         sx={{

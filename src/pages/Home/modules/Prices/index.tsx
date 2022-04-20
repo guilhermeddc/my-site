@@ -9,7 +9,7 @@ export const Prices: React.FC = () => {
   const {isMobile, isTablet} = useMediaQuery();
 
   return (
-    <Stack flex={1} id="prices">
+    <Stack flex={1} id="prices" pt={11} mt={-11}>
       <SessionTitle title="Prices" />
       <Container
         sx={{

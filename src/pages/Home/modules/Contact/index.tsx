@@ -22,7 +22,7 @@ export const Contact: React.FC = () => {
   const {isMobile} = useMediaQuery();
 
   return (
-    <Stack flex={1} id="contact">
+    <Stack flex={1} id="contact" pt={11} mt={-11}>
       <SessionTitle title="Contact" />
       <Container
         sx={{

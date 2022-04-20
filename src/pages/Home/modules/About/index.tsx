@@ -11,7 +11,7 @@ export const About: React.FC = () => {
   const {isMobile} = useMediaQuery();
 
   return (
-    <Stack flex={1} id="about">
+    <Stack flex={1} id="about" pt={11} mt={-11}>
       <SessionTitle title="About me" />
       <Container
         sx={{
