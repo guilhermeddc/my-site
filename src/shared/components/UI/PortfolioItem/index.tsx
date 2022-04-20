@@ -2,6 +2,8 @@ import React from 'react';
 
 import {CallMadeRounded} from '@mui/icons-material';
 import {Grid, Stack, Typography} from '@mui/material';
+import {useMediaQuery} from 'shared/hook';
+import {i18n} from 'translate/i18n';
 
 interface IProps {
   title: string;
@@ -20,6 +22,8 @@ export const PortfolioItem: React.FC<IProps> = ({
   index,
   borderBottom,
 }) => {
+  const {isMobile} = useMediaQuery();
+
   return (
     <Grid
       item
@@ -41,10 +45,12 @@ export const PortfolioItem: React.FC<IProps> = ({
       }}>
       <Stack spacing={3} justifyContent="space-between" height={320}>
         <Stack spacing={3}>
-          <Typography variant="h6">{title}</Typography>
+          <Typography variant="h6">
+            <>{i18n.t(title)}</>
+          </Typography>
 
-          <Typography variant="body1" fontWeight={500}>
-            {description}
+          <Typography variant={isMobile ? 'body2' : 'body1'} fontWeight={500}>
+            <>{i18n.t(description)}</>
           </Typography>
         </Stack>
 
@@ -53,7 +59,9 @@ export const PortfolioItem: React.FC<IProps> = ({
           direction="row"
           alignItems="center"
           justifyContent="space-between">
-          <Typography>{date}</Typography>
+          <Typography>
+            <>{i18n.t(date)}</>
+          </Typography>
 
           <Stack spacing={1} direction="row" alignItems="center">
             <Typography
@@ -65,7 +73,7 @@ export const PortfolioItem: React.FC<IProps> = ({
               color="#010001"
               variant="body1"
               href={url}>
-              Learn more
+              <>{i18n.t('Learn more')}</>
             </Typography>
             <CallMadeRounded />
           </Stack>

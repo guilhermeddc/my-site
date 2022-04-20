@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Stack, Container, Typography} from '@mui/material';
 import {useMediaQuery} from 'shared/hook';
+import {i18n} from 'translate/i18n';
 
 interface IProps {
   title: string;
@@ -23,7 +24,9 @@ export const SessionTitle: React.FC<IProps> = ({title}) => {
           borderRight: '1px solid #010001',
         }}>
         <Stack flex={1} p={4}>
-          <Typography variant={isMobile ? 'h3' : 'h2'}>{title}</Typography>
+          <Typography variant={isMobile ? 'h3' : 'h2'}>
+            <>{i18n.t(title)}</>
+          </Typography>
         </Stack>
       </Container>
     </Stack>

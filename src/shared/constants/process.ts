@@ -1,20 +1,20 @@
 export const PROCESS_DATA = [
   {
     id: 1,
-    title: 'Creation Time',
+    title: 'Brief and analytics',
     description:
-      'THE CREATION OF A WEBSITE ON TILDA TAKES LESS TIME THAN A WEBSITE WRITTEN IN CODE. IT IS AN EXCELLENT OPPORTUNITY IF YOU NEED TO IMPLEMENT YOUR BUSINESS IDEAS QUICKLY WITH THE SAME QUALITY.',
+      'We conduct an interview, and then i learn all the details of a project and the specific details of a business. I research competitors, collect references, form ideas for a project, and develop a structure for a future site.',
   },
   {
     id: 2,
-    title: 'Price',
+    title: 'Prototype and design',
     description:
-      'THE PRICE FOR A SITE WRITTEN IN CODE STARTS FROM 1000€, WHILE A SINGLE-PAGE SITE ON TILDA WILL COST FROM 500€.',
+      'I create a website prototype taking into account the user experience (UX). After approval, i develop two visual design concepts (UI) for 2 blocks (the main screen and the subsequent block), then i start full-fledged development based on the selected concept.',
   },
   {
     id: 3,
-    title: 'Convenience',
+    title: 'Layout and launch',
     description:
-      'MANAGING A WEBSITE ON TILDA IS EASIER TO UNDERSTAND THAN EDITING A WEBSITE WRITTEN IN CODE. YOU CAN EASILY REMOVE AND ADD BLOCKS, CHANGE THE STRUCTURE.',
+      'When the design is approved, i start the site-building on tilda. I develop animation, connect forms and services, and perform basic seo setup. We test the site for errors and launch it.',
   },
 ];

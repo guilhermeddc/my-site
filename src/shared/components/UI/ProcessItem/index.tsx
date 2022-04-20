@@ -2,6 +2,7 @@ import React from 'react';
 
 import {Grid, Stack, Typography} from '@mui/material';
 import {useMediaQuery} from 'shared/hook';
+import {i18n} from 'translate/i18n';
 
 interface IProps {
   title: string;
@@ -34,11 +35,13 @@ export const ProcessItem: React.FC<IProps> = ({
         },
         p: 5,
       }}>
-      <Stack spacing={3} height={isMobile ? 160 : isTablet ? 160 : 120}>
-        <Typography variant="h6">{title}</Typography>
+      <Stack spacing={3} height={isMobile ? 300 : isTablet ? 200 : 160}>
+        <Typography variant="h6">
+          <>{i18n.t(title)}</>
+        </Typography>
 
         <Typography variant={isMobile ? 'body2' : 'body1'} fontWeight={500}>
-          {description}
+          <>{i18n.t(description)}</>
         </Typography>
       </Stack>
     </Grid>

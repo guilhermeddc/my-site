@@ -3,6 +3,7 @@ import React from 'react';
 import {Container, Grid, Stack, Typography} from '@mui/material';
 import {BarCode, ExternalLink} from 'shared/components';
 import {useMediaQuery} from 'shared/hook';
+import {i18n} from 'translate/i18n';
 
 export const Header: React.FC = () => {
   const {isMobile, isTablet} = useMediaQuery();
@@ -44,7 +45,7 @@ export const Header: React.FC = () => {
                   }}>
                   <Typography
                     variant={isMobile ? 'h4' : isTablet ? 'h2' : 'h1'}>
-                    Minimalistic
+                    <>{i18n.t('Minimalistic')}</>
                   </Typography>
                 </Grid>
                 <Grid
@@ -56,7 +57,7 @@ export const Header: React.FC = () => {
                   }}>
                   <Typography
                     variant={isMobile ? 'h4' : isTablet ? 'h2' : 'h1'}>
-                    & Creative
+                    & <>{i18n.t('Creative')}</>
                   </Typography>
                 </Grid>
                 <Grid item xs={12} sx={{p: 3}}>

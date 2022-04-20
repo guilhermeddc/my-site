@@ -9,6 +9,7 @@ import {
   useScrollTrigger,
 } from '@mui/material';
 import {background} from 'shared/assets';
+import {i18n} from 'translate/i18n';
 
 interface IProps {
   window?: () => Window;
@@ -72,7 +73,7 @@ export const Appbar: React.FC<IProps> = ({window}) => {
                     color="#010001"
                     fontWeight={500}
                     textTransform="uppercase">
-                    about me
+                    <>{i18n.t('About me')}</>
                   </Typography>
                 </Link>
 
@@ -82,7 +83,7 @@ export const Appbar: React.FC<IProps> = ({window}) => {
                     fontWeight={500}
                     color="#010001"
                     textTransform="uppercase">
-                    portfolio
+                    <>{i18n.t('Portfolio')}</>
                   </Typography>
                 </Link>
 
@@ -92,7 +93,7 @@ export const Appbar: React.FC<IProps> = ({window}) => {
                     fontWeight={500}
                     color="#010001"
                     textTransform="uppercase">
-                    process
+                    <>{i18n.t('Process')}</>
                   </Typography>
                 </Link>
 
@@ -102,7 +103,7 @@ export const Appbar: React.FC<IProps> = ({window}) => {
                     fontWeight={500}
                     color="#010001"
                     textTransform="uppercase">
-                    prices
+                    <>{i18n.t('Prices')}</>
                   </Typography>
                 </Link>
               </Stack>
@@ -118,7 +119,7 @@ export const Appbar: React.FC<IProps> = ({window}) => {
                   fontWeight={500}
                   textTransform="uppercase"
                   sx={{px: 0.9}}>
-                  contacts
+                  <>{i18n.t('Contacts')}</>
                 </Typography>
               </Link>
             </Stack>

@@ -16,6 +16,7 @@ import {
 import {ExternalLink, SessionTitle} from 'shared/components';
 import {PRICES_DATA} from 'shared/constants';
 import {useMediaQuery} from 'shared/hook';
+import {i18n} from 'translate/i18n';
 
 export const Contact: React.FC = () => {
   const {isMobile} = useMediaQuery();
@@ -45,7 +46,7 @@ export const Contact: React.FC = () => {
             }}>
             <Stack p={5} height={600} justifyContent="space-between">
               <Typography variant={isMobile ? 'h5' : 'h4'}>
-                Let&apos;s make something incredible together
+                <>{i18n.t('Let&apos;s make something incredible together')}</>
               </Typography>
 
               <Stack spacing={3} mb={3}>
@@ -95,11 +96,13 @@ export const Contact: React.FC = () => {
               height={600}
               spacing={4}
               justifyContent="space-between">
-              <TextField label="NAME" variant="standard" />
+              <TextField label={`${i18n.t('NAME')}`} variant="standard" />
               <TextField label="E-MAIL" variant="standard" type="email" />
 
               <FormControl variant="standard" fullWidth>
-                <InputLabel id="website-type">WEBSITE TYPE</InputLabel>
+                <InputLabel id="website-type">
+                  <>{i18n.t('WEBSITE TYPE')}</>
+                </InputLabel>
                 <Select labelId="website-type" label="WEBSITE TYPE">
                   {PRICES_DATA.map((item) => (
                     <MenuItem key={item.id} value={item.title}>
@@ -110,7 +113,7 @@ export const Contact: React.FC = () => {
               </FormControl>
 
               <TextField
-                placeholder="TELL ABOUT YOU PROJECT"
+                placeholder={i18n.t('TELL ABOUT YOU PROJECT')}
                 variant="standard"
                 multiline
                 rows={isMobile ? 5 : 6}
@@ -125,7 +128,7 @@ export const Contact: React.FC = () => {
                     variant={isMobile ? 'body2' : 'body1'}
                     fontWeight={600}
                     letterSpacing={1}>
-                    SEND
+                    <>{i18n.t('SEND')}</>
                   </Typography>
                 </Button>
 
@@ -134,12 +137,12 @@ export const Contact: React.FC = () => {
                     variant={isMobile ? 'body2' : 'body1'}
                     fontWeight={500}
                     color="#868586">
-                    BY CLICKING THE BUTTON, YOU ACCEPT
+                    <>{i18n.t('BY CLICKING THE BUTTON, YOU ACCEPT')}</>
                   </Typography>
                   <Typography
                     variant={isMobile ? 'body2' : 'body1'}
                     fontWeight={500}>
-                    THE PRIVACY POLICY.
+                    <>{i18n.t('THE PRIVACY POLICY.')}</>
                   </Typography>
                 </Stack>
               </Stack>
