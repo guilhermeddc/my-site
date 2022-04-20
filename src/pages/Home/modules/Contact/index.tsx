@@ -99,6 +99,7 @@ export const Contact: React.FC = () => {
               height={600}
               spacing={4}
               justifyContent="space-between">
+              <input type="hidden" name="form-name" value="contact" />
               <TextField
                 name="name"
                 label={`${i18n.t('NAME')}`}
