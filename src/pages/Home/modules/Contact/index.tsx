@@ -99,14 +99,28 @@ export const Contact: React.FC = () => {
               height={600}
               spacing={4}
               justifyContent="space-between">
-              <TextField label={`${i18n.t('NAME')}`} variant="standard" />
-              <TextField label="E-MAIL" variant="standard" type="email" />
+              <TextField
+                name="name"
+                label={`${i18n.t('NAME')}`}
+                variant="standard"
+                type="text"
+              />
+              <TextField
+                name="email"
+                label="E-MAIL"
+                variant="standard"
+                type="email"
+              />
 
               <FormControl variant="standard" fullWidth>
                 <InputLabel id="website-type">
                   <>{i18n.t('WEBSITE TYPE')}</>
                 </InputLabel>
-                <Select labelId="website-type" label="WEBSITE TYPE">
+                <Select
+                  labelId="website-type"
+                  label="WEBSITE TYPE"
+                  name="website-type"
+                  type="select">
                   {PRICES_DATA.map((item) => (
                     <MenuItem key={item.id} value={item.title}>
                       {item.title}
@@ -118,6 +132,8 @@ export const Contact: React.FC = () => {
               <TextField
                 placeholder={i18n.t('TELL ABOUT YOU PROJECT')}
                 variant="standard"
+                name="message"
+                type="text"
                 multiline
                 rows={isMobile ? 5 : 6}
               />
