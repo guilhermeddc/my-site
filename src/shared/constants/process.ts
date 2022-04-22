@@ -15,6 +15,6 @@ export const PROCESS_DATA = [
     id: 3,
     title: 'Layout and launch',
     description:
-      'When the design is approved, i start the site-building on tilda. I develop animation, connect forms and services, and perform basic seo setup. We test the site for errors and launch it.',
+      'When the design is approved, i start the site-building. I develop animation, connect forms and services, and perform basic seo setup. We test the site for errors and launch it.',
   },
 ];

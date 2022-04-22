@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 import {Grid, Stack, Typography} from '@mui/material';
 import {useMediaQuery} from 'shared/hook';
@@ -76,3 +76,5 @@ export const PriceItem: React.FC<IProps> = ({
     </Grid>
   );
 };
+
+export default memo(PriceItem);

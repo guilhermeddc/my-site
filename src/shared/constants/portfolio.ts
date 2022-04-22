@@ -25,7 +25,7 @@ export const PORTFOLIO_DATA = [
   },
   {
     id: 4,
-    title: 'Front-End Site - Glaucia Goulart',
+    title: 'Front-End Site - Achei Empresas',
     description:
       'Site simples em React utilizando Typescript, com um catálogo de cartões de empresas cadastradas.',
     url: 'https://acheiempresas.com',

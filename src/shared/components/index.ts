@@ -1,7 +1,9 @@
 export * from './UI/BarCode';
-export * from './UI/SessionTitle';
-export * from './UI/PortfolioItem';
-export * from './UI/ProcessItem';
-export * from './UI/PriceItem';
-export * from './UI/ExternalLink';
+import ExternalLink from './UI/ExternalLink';
+import PortfolioItem from './UI/PortfolioItem';
+import PriceItem from './UI/PriceItem';
+import ProcessItem from './UI/ProcessItem';
+import SessionTitle from './UI/SessionTitle';
 export * from './UI/ButtonFixed';
+
+export {SessionTitle, PortfolioItem, ProcessItem, PriceItem, ExternalLink};

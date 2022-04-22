@@ -78,8 +78,8 @@ export const messages = {
         'Crio um protótipo de website levando em conta a experiência do usuário (UX). Após a aprovação, desenvolvo dois conceitos de design visual (UI) para 2 blocos (a tela principal e o bloco subsequente), depois inicio o desenvolvimento completo com base no conceito selecionado.',
 
       'Layout and launch': 'Layout e lançamento',
-      'When the design is approved, i start the site-building on tilda. I develop animation, connect forms and services, and perform basic seo setup. We test the site for errors and launch it.':
-        'Quando o design for aprovado, inicio a construção do site no tilda. Desenvolvo animação, conecto formulários e serviços e realizo configuração básica de seo. Testamos o site para erros e lançamos.',
+      'When the design is approved, i start the site-building. I develop animation, connect forms and services, and perform basic seo setup. We test the site for errors and launch it.':
+        'Quando o design for aprovado, inicio a construção do site. Desenvolvo animação, conecto formulários e serviços e realizo configuração básica de seo. Testamos o site para erros e lançamos.',
 
       'I am a FULLSTACK web developer and an expert of the REACTjs and NODEjs. I can design and build websites, mobile apps, and shops.':
         'Sou desenvolvedor FULLSTACK web e expert em REACTjs e NODEjs. Posso desenhar e construir websites, aplicativos mobiles e lojas.',

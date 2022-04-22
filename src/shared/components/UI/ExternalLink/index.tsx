@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 import {ArrowForwardIos} from '@mui/icons-material';
 import {Stack, Typography} from '@mui/material';
@@ -29,3 +29,5 @@ export const ExternalLink: React.FC<IProps> = ({title, url}) => {
     </Stack>
   );
 };
+
+export default memo(ExternalLink);

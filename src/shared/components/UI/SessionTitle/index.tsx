@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 import {Stack, Container, Typography} from '@mui/material';
 import {useMediaQuery} from 'shared/hook';
@@ -32,3 +32,5 @@ export const SessionTitle: React.FC<IProps> = ({title}) => {
     </Stack>
   );
 };
+
+export default memo(SessionTitle);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 
 import {CallMadeRounded} from '@mui/icons-material';
 import {Grid, Stack, Typography} from '@mui/material';
@@ -82,3 +82,5 @@ export const PortfolioItem: React.FC<IProps> = ({
     </Grid>
   );
 };
+
+export default memo(PortfolioItem);
