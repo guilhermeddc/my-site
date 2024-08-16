@@ -63,20 +63,24 @@ export const PortfolioItem: React.FC<IProps> = ({
             <>{i18n.t(date)}</>
           </Typography>
 
-          <Stack spacing={1} direction="row" alignItems="center">
-            <Typography
-              component="a"
-              textTransform="uppercase"
-              target="_blank"
-              fontWeight={600}
-              sx={{textDecoration: 'none'}}
-              color="#010001"
-              variant="body1"
-              href={url}>
-              <>{i18n.t('Learn more')}</>
-            </Typography>
+          <Typography
+            component="a"
+            target="_blank"
+            href={url}
+            textTransform="uppercase"
+            fontWeight={600}
+            sx={{
+              textDecoration: 'none',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 0.5,
+            }}
+            color="#010001"
+            variant="body1">
+            <>{i18n.t('Learn more')}</>
+
             <CallMadeRounded />
-          </Stack>
+          </Typography>
         </Stack>
       </Stack>
     </Grid>
